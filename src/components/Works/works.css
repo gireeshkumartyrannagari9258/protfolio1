@@ -1,0 +1,84 @@
+#works {
+    margin: 0 auto;
+    min-height: calc(100vh - 0.4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    text-align: center;
+    padding: 2rem 0; /* Add some padding to the top and bottom of the section */
+}
+
+.workstitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.worksdesc {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
+    margin-bottom: 2rem;
+    display: block; /* Make sure the description spans the full width */
+}
+
+.worksimgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.worksimg-container {
+    position: relative;
+    height: 13rem;
+    width: 13rem;
+    margin: 0.9rem;
+}
+
+.worksimg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.img-description {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.worksimg-container:hover .img-description {
+    opacity: 1;
+}
+
+.workbtn {
+    margin: 1.5rem ;
+    margin-bottom: 5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background: white;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 585px) {
+    .worksimg-container {
+        height: 48vw;
+        /* width: 48vw; */
+    }
+}
